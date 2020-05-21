@@ -1,6 +1,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="main.css" type="text/css"/>
+    <script src="https://kit.fontawesome.com/a91c5971af.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Purple Mattress</title>
@@ -25,33 +26,41 @@
             <section id="head">
                 <h1>Shop our matresses</h1>
                 <p class="head-desc"> The world's only mattresses with the one, the only, Purple Grid! &trade;</p>
-                <form id="form">
-                    <div class = "form-group">
-                        <label id="email" for="email">Email</label>
-                        <input
-                            type="email"
-                            name="email"
-                            id="email"
-                            class="form-control"
-                            placeholder="Get Purple Email"
-                            required
-                        />
-                    </div> 
-                    <div class="form-group">
-                        <button type="submit" id="submit" class="submit-button">
-                        Subscribe
-                        </button>
-                    </div>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Get Purple Email - enter email address"
+                        required
+                    />
+                    <br>
+                    <input type="submit" id="submit" class="btn" value="Subscribe" />
                 </form>
             </section>
             
             <section id="features">
-                <h2>No Pressure Support</h2>
-                    <p>Instantly adapts to your body for the soft comport you crave and the firm support you need.  All at once.</p>
-                <h2>Keeps you comfy and cool.</h2>
-                    <p>Our Purple Grid allows air flow keeping you at the perfect sleep temperature, never too hot or too cold.</p> 
-                <h2>White Glove Delivery</h2>
-                    <p>Free white glove delivery and mattress removal.</p>
+                <div class="grid">
+                    <div class ="icon"><i class="fas fa-bed fa-2x"></i></div>
+                    <div class="desc">
+                        <h2>No Pressure Support</h2>
+                        <p>Instantly adapts to your body for the soft comport you crave and the firm support you need.  All at once.</p>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="icon"><i class="fas fa-thermometer-half fa-2x"></i></div>
+                    <div class="desc">
+                        <h2>Keeps you comfy and cool.</h2>
+                        <p>Our Purple Grid allows air flow keeping you at the perfect sleep temperature, never too hot or too cold.</p> 
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="icon"><i class="fas fa-truck fa-2x"></i></div>
+                    <div class="desc">
+                        <h2>White Glove Delivery</h2>
+                        <p>Free white glove delivery and mattress removal.</p>
+                    </div>
+                </div>
             </section>
         
             <section id="How_It_Works">
@@ -64,24 +73,24 @@
             <section id="product_box">
                 <div class="product_option">
                     <img class="mattress_image" src="https://assets.purple.com/images/hybrid-mattress-no-number-reflection_191120_183109.png?mtime=20191120113109" alt="The Purple Mattress image">
-                    <h2>The Purple Mattress</h2>
+                    <h2>Purple Mattress</h2>
                     <p class="product_subtitle">Supports your back and your budget</p>
                     <p class="product_price"> From $649</p>
-                    <button id="Shop">Shop</button>
+                    <button class="btn" id="Shop">Shop</button>
                 </div>
                 <div class="product_option">
                     <img class="mattress_image" src="https://assets.purple.com/images/hybrid-mattress-no-number-reflection_191120_183109.png?mtime=20191120113109" alt="Purple Hybrid Mattress image">
                     <h2>Purple Hybrid</h2>
                     <p class="product_subtitle">Enhanced adaptive support and airflow</p>
                     <p class="product_price"> From $1299</p>
-                    <button id="Shop">Shop</button>
+                    <button class="btn" id="Shop">Shop</button>
                 </div>
                 <div class="product_option">
                     <img class="mattress_image" src="https://assets.purple.com/images/hybrid-mattress-no-number-reflection_191120_183109.png?mtime=20191120113109" alt="Purple Hybrid Premier Mattress image">
-                    <h2>Purple Hybrid Ppremier</h2>
+                    <h2>Hybrid Premier</h2>
                     <p class="product_subtitle">The ultimate No Pressure Mattress</p>
                     <p class="product_price"> From $1899</p>
-                    <button id="Shop">Shop</button>
+                    <button class="btn" id="Shop">Shop</button>
                 </div>
             </section>
         </div>
